@@ -1,9 +1,11 @@
 "use client"
 import React from 'react'
-
+import "./footer.css"
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='footerCont'>
+      <p className="footerTxt">Made by <span>@muaj</span></p>
+    </div>
   )
 }
 

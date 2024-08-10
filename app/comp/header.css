@@ -1,0 +1,48 @@
+
+.container {
+    position: fixed; /* Fixes the header position */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: white; /* Ensures background consistency */
+}
+
+.headerImg {width: 140px;}
+
+.navLink {display: flex;flex-direction: row;}
+
+.navLinkItem {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.navlinkP {
+    font-size: large;
+    position: relative;
+}
+
+.navlinkP::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.navlinkP:hover::after {
+    width: 100%;
+}
+
+.navLinkItem:nth-child(2) .navlinkP {background-color: black;color: white;transition: 300ms ease-in-out;height: max-content;}
+.navLinkItem:nth-child(2):hover .navlinkP {color: black;background-color: white;}
+.navLink a {text-decoration: none;color: inherit;display: block;}
