@@ -2,40 +2,51 @@
     padding: 0;
     margin: 0;
 }
-form{
-    width: 428px; height: 48px;
-    border: 3px solid #000; border-radius: 50px;
-    display: flex; align-items: center; flex-direction: row;justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 4px;
+
+form {
+    width: 428px;height: 48px;
+    border: 3px solid #000;border-radius: 50px;
+    display: flex;align-items: center;flex-direction: row;justify-content: space-between;
+    padding-left: 20px;padding-right: 4px;
 }
 
-.input1{
-    border:none;
+.input1 {
+    border: none;
     outline: none;
-    width: 100%;
+    width: 90%;
+    height: 100%;
 }
-.input1::placeholder{
-font-size: small;
-color: #000;
+
+.input1::placeholder {
+    font-size: small;
+    color: #000;
 }
+
 .homePage {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 89.5vh;
+    /* Full viewport height */
 }
 
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.submit{
-    height: 40px;
-    width: 40px;
+
+.submit {
+    height: 38px;
+    width: 38px;
     background-color: #000;
     border-radius: 50px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
 }
+.submit:hover >  .arrowImg{
+    position: relative;
+    animation: rightfour 1000ms infinite;
+}@keyframes rightfour{ 0%{ right: 0px;}50%{right: -4px;}100%{right: 0px;}}

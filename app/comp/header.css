@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 32px;
-    background-color: white; /* Ensures background consistency */
 }
 
 .headerImg {width: 140px;}
