@@ -13,6 +13,7 @@ export default function Home() {
         <div className="center">
           <form >
             <input className="input1" placeholder="Enter link to shorten" />
+            <div className="submit"></div>
           </form>
         </div>
       </div>
