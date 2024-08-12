@@ -42,7 +42,7 @@ export default function Page({ params }) {
                 <div className="linkInfo">
                     <div className="rowTable"> 
                         <div className="redirectURL">Redirect URL</div> 
-                        <div className="redirectURLInfo"onClick={navigator.clipboard.writeText(redirectURL)}> {redirectURL}</div>
+                        <div className="redirectURLInfo"> {redirectURL}</div>
                     </div>
                     <div className="rowTable"> 
                         <div className="twoTHrreeFourcolone">Created at</div> 
@@ -50,7 +50,7 @@ export default function Page({ params }) {
                     </div>
                     <div className="rowTable"> 
                         <div className="twoTHrreeFourcolone">Shortened link</div> 
-                        <div className="twoTHrreeFourcoltwo">/{trackingID}</div>
+                        <div className="twoTHrreeFourcoltwo">/li/{trackingID}</div>
                     </div>
                     <div className="rowTable"> 
                         <div className="fivecolone">Tracking ID</div> 

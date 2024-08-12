@@ -8,7 +8,7 @@ export default function Header() {
       <Link href="/">
         <img className="headerImg" src="https://raw.githubusercontent.com/Flare-0/fwd.to/main/public/fwdto.svg" alt="Fwd.to" />
       </Link>
-
+      
       <div className="navLink">
         <div className="navLinkItem">
           <Link href="/">

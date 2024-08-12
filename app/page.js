@@ -72,6 +72,7 @@ export default function Home() {
       <Header />
       <div className="homePage">
         <div className="center">
+          <h1>Easily shorten and track your links</h1>
           <form className="homepageForm" onSubmit={handleSubmit}>
             <input
               className="input1"
