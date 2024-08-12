@@ -21,7 +21,7 @@ export default function Home() {
 
       <div className="homePage">
         <div className="center">
-        <form onSubmit={handleSubmit}>
+        <form className="homepageForm" onSubmit={handleSubmit}>
 
             <input value={value} onChange={handleChange}  className="input1" placeholder="Enter Tracking id" />
             <div className="submit">

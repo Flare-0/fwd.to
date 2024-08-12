@@ -63,6 +63,7 @@ export default function Home() {
 
     if (key) {
       router.push(`/tr/${key}`); // Navigate to the new URL with the key
+      e.target.reset(); // Clear the form input
     }
   };
 
@@ -71,13 +72,16 @@ export default function Home() {
       <Header />
       <div className="homePage">
         <div className="center">
-          <form onSubmit={handleSubmit}>
+          <form className="homepageForm" onSubmit={handleSubmit}>
             <input
               className="input1"
               placeholder="Enter link to shorten"
               type="text"
             />
-            <div className="submit">
+            <div
+              className="submit"
+              onClick={() => handleSubmit({ preventDefault: () => {}, target: document.querySelector('.homepageForm') })}
+            >
               <img
                 className="arrowImg"
                 src="https://raw.githubusercontent.com/Flare-0/fwd.to/main/public/arrow.svg"

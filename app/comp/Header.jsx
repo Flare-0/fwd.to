@@ -21,11 +21,6 @@ export default function Header() {
           </Link>
         </div>
         <div className="navLinkItem">
-          <Link href="/how-to-use">
-            <p className="navlinkP">How to use?</p>
-          </Link>
-        </div>
-        <div className="navLinkItem">
           <Link href="https://github.com/Flare-0/fwd.to">
             <p className="navlinkP">Info</p>
           </Link>

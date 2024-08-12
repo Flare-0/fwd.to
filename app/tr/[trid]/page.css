@@ -13,10 +13,10 @@
 }
 
 .linkInfo{
-    display: flex;align-items: center;justify-content: center;
+    display: flex;align-items: center;justify-content: center;flex-direction: column;
 }
-.linkInfo div {
-    margin: 4px;
+.rowTable div {
+    margin: 2px;
 }
 .rowTable{
     display: flex;flex-direction: row;
@@ -31,4 +31,107 @@
     height: 54px;
     width: 55vw;
     background-color: black;
+    border-radius: 0px 32px 0px 0px;
+}
+.twoTHrreeFourcolone{
+    height: 54px;
+    width: 20vw;
+    background-color: black;
+}
+.twoTHrreeFourcoltwo{
+    height: 54px;
+    width: 55vw;
+    background-color: black;
+}
+.fivecolone{
+    height: 54px;
+    width: 20vw;
+    background-color: black;
+    border-radius: 0px 0px 0px 32px;
+}
+.fivecoltwo{
+    height: 54px;
+    width: 55vw;
+    background-color: black;
+    border-radius: 0px 0px 32px 0px;
+}
+.rowTable div:nth-child(1){
+    color: white;
+    font-weight: 650 ;
+    font-size: larger;
+    display: flex;align-items: center;justify-content: center;
+}
+.rowTable div:nth-child(2){
+    color: white;
+    font-weight: 650 ;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.clickHeader{
+display: flex;
+flex-direction: row;
+}
+
+.clickHeader div{
+    margin: 2px;
+}
+
+.ipadd,.time{
+    width: 12vw;
+    height: 44px;
+    background-color: black;
+    color: white;
+    border-radius: 150px;
+    display: flex;align-items: center;justify-content: center;   padding: 8px 12px;  /* Increase padding */
+    font-size: 14px;  /* Adjust font size */
+    font-weight: 500;  /* Slightly increase font weight */
+    line-height: 1.5;  /* Increase line height for better readability */
+    border-radius: 150px;  /* Add some border radius for softer corners */
+    margin: 4px 0;  /* Add vertical margin to create space between rows */
+}
+.useragent{
+    width:45vw;
+    height: 44px;
+    background-color: black;
+    color: white;
+    border-radius: 150px;
+    display: flex;align-items: center;justify-content: center;
+    padding: 8px 12px;  /* Increase padding */
+    font-size: 14px;  /* Adjust font size */
+    font-weight: 500;  /* Slightly increase font weight */
+    line-height: 1.5;  /* Increase line height for better readability */
+    border-radius: 150px;  /* Add some border radius for softer corners */
+    margin: 4px 0;  /* Add vertical margin to create space between rows */
+}
+.akdomcenter{
+    display: flex;align-items: center;justify-content: center;flex-direction: column;
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+.ipadd2, .time2, .useragent2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;  /* Increase padding */
+    font-size: 14px;  /* Adjust font size */
+    font-weight: 500;  /* Slightly increase font weight */
+    line-height: 1.5;  /* Increase line height for better readability */
+    border-radius: 150px;  /* Add some border radius for softer corners */
+    margin: 4px 0;  /* Add vertical margin to create space between rows */
+}
+
+.ipadd2, .time2 {
+    width: 12vw;  /* Increase width slightly for more space */
+    height: auto;  /* Allow height to adjust based on content */
+}
+
+.useragent2 {
+    width: 45vw;  /* Adjust width for more space */
+    height: auto;  /* Allow height to adjust based on content */
+    padding: 8px 12px;  /* Increase padding */
 }
